@@ -5,3 +5,8 @@ function ClearBoard (){
     }
   }
 }
+
+function PaintCell(x, y, color){
+  cell = document.getElementById("c"+x+y);
+  cell.style.background = color;
+}
