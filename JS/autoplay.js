@@ -11,6 +11,11 @@ function SelectCell(x, y){
  PaintHorseCell(x, y, "green");
 }
 
+function CheckCell(x, y){
+
+  SelectCell(x, y);
+}
+
 function autoplay(){
   //alert("Hola!");
 
