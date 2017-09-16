@@ -7,7 +7,7 @@ var cronometer;
 
 function autoplay(){
   //alert("Hola!");
-
+  ResetTime();
   startTime();
 }
 
