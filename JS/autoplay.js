@@ -17,8 +17,21 @@ function SelectCell(x, y){
 }
 
 function CheckCell(x, y){
+  CheckTrue = false;
 
-  SelectCell(x, y);
+  dif_x = x - CellSelected_x;
+  dif_y = y - CellSelected_y;
+
+  if ( dif_x == 1 && dif_y == -2) CheckTrue = true;
+  if ( dif_x == 1 && dif_y == 2) CheckTrue = true;
+  if ( dif_x == -1 && dif_y == -2) CheckTrue = true;
+  if ( dif_x == -1 && dif_y == 2) CheckTrue = true;
+  if ( dif_x == 2 && dif_y == -1) CheckTrue = true;
+  if ( dif_x == 2 && dif_y == 1) CheckTrue = true;
+  if ( dif_x == -2 && dif_y == -1) CheckTrue = true;
+  if ( dif_x == -2 && dif_y == 1) CheckTrue = true;
+
+  if (CheckTrue)SelectCell(x, y);
 }
 
 function autoplay(){
