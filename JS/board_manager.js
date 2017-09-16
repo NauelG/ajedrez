@@ -10,3 +10,8 @@ function PaintCell(x, y, color){
   cell = document.getElementById("c"+x+y);
   cell.style.background = color;
 }
+function PaintHorseCell(x, y, color){
+  cell = document.getElementById("c"+x+y);
+  cell.style.background = color;
+  cell.innerHTML = "<img src='horse.gif'></img>";
+}

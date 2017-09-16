@@ -8,6 +8,7 @@ var board = new Array(8);
 function SelectCell(x, y){
  board [x][y] = 1;
  PaintCell(x, y, "green");
+ PaintHorseCell(x, y, "green");
 }
 
 function autoplay(){
