@@ -3,5 +3,5 @@ function startTime(){
   m = document.getElementById("minutes");
 
   s.innerHTML = "50";
-  m.innerHTML = "80";
+  m.innerHTML = "85";
 }

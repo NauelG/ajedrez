@@ -151,6 +151,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514200', end
 	top: 90px;
 	left: 0px;
 	text-align: center;
+	display: none;
 }
 #message div.share{
 	text-align: center;

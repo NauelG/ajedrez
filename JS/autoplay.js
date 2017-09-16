@@ -6,7 +6,7 @@ var cronometer;
 
 
 function autoplay(){
-  alert("Hola!");
+  //alert("Hola!");
 
   startTime();
 }
