@@ -3,7 +3,7 @@ var total_secs;
 var total_mins;
 var cronometer;
 
-
+var Moves_Required;
 var Moves;
 var Options;
 
@@ -55,6 +55,21 @@ function SelectCell(x, y){
 
   Check_SuccessfullEnd();
   Check_GameOver(x, y);
+  Check_newBonus();
+}
+function Check_newBonus(){
+  if ((64-Moves) % Moves_Required == 0){
+    Bonus_Cell = false;
+    while (Bonus_Cell == false){
+
+      Bonus_Cell_x = Math.round(Math.random() * 7);
+      Bonus_Cell_y = Math.round(Math.random() * 7);
+
+      if (board[Bonus_Cell_x][Bonus_Cell_y] == 0) Bonus_Cell = true;
+    }
+    board[Bonus_Cell_x][Bonus_Cell_y] = 2;
+    PaintBonusCell(Bonus_Cell_x,Bonus_Cell_y);
+  }
 }
 
 function CheckCell(x, y){
@@ -81,6 +96,7 @@ function autoplay(){
   //alert("Hola!");
 
   Moves = 64;
+  Moves_Required = 8;
 
   for (i=0; i<8; i++) board[i] = new Array(8);
 

@@ -15,3 +15,7 @@ function PaintHorseCell(x, y, color){
   cell.style.background = color;
   cell.innerHTML = "<img src='horse.gif'></img>";
 }
+function PaintBonusCell(x, y){
+  cell = document.getElementById("c"+x+y);
+  cell.innerHTML = "<img src='bonus.png'></img>";
+}
